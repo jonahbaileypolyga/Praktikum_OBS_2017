@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Ausbildungs- und Praktikumsbörse</title>
+</head>
+
+<body bgcolor="#0080FF">
+<h1 align=center>Praktikumsplatz eintragen</h1>
+
+<p><a href=unternehmen.html>Zurück zur Übersicht</a></p>
+
+<br>
+
+<form id="praktikumsplatz" name="praktikumsplatz" action="http://www.formular-chef.de/fc.cgi" method="post" enctype="multipart/form-data">
+<input type="hidden" name="empfaenger" value="patrick.schwab@gmx.de" />
+<fieldset style="width:505px">
+<legend><font color=#FFFFFF><strong>Praktikumsplatz</strong></legend>
+	<table width=600 height=50>
+		<tr>
+			<td>Kategorie:
+			<td><select name="Kategorie" size=1>
+			<option>bitte auswählen...</option>
+			<option>Technische Berufe</option>
+			<option>Kreative Berufe</option>
+			<option>Handwerkliche Berufe</option>
+			<option>Gastronomie / Lebensmittel</option>
+			<option>Kaufmännische Berufe</option>
+			<option>Gesundheitswesen / Pflege</option>
+			<option>Sonstige Berufe</option>
+			</select>
+		</tr>
+		<tr>
+			<td>Praktikumsstelle als:
+			<td><input name="Praktikumsstelle als" size=50>
+		</tr>
+		<tr>
+			<td>Name:
+			<td><input name="Name" size=50>
+		</tr>
+		<tr>
+			<td>Firmenname:
+			<td><input name="Firmenname" size=50>
+		</tr>
+		<tr>
+			<td>Straße:
+			<td><input name="Straße" size=50>
+		</tr>
+		<tr>
+			<td>PLZ:
+			<td><input name="PLZ" size=50>
+		</tr>
+		<tr>
+			<td>Stadt:
+			<td><input name="Stadt" size=50>
+		</tr>
+		<tr>
+			<td>Telefon:
+			<td><input name="Telefon" size=50>
+		</tr>
+		<tr>
+			<td>Fax:
+			<td><input name="Fax" size=50>
+		</tr>
+		<tr>
+			<td>E-Mail:
+			<td><input name="E-Mail" size=50>
+		</tr>
+		<tr>
+			<td>Webseite:
+			<td><input name="Webseite" size=50>
+		</tr>
+		<tr>
+			<td>Kontaktperson:
+			<td><input name="Kontaktperson" size=50>
+		</tr>
+		<tr>
+			<td>Tätigkeitsfeld:
+			<td><input name="Tätigkeitsfeld" size=50>
+		</tr>
+	</table>
+	<p><font color=black>Beschreibung:</font></p>
+	<textarea name="Beschreibung" rows=10 cols=60></textarea>
+</fieldset>
+
+<fieldset style="width:505px">
+<legend><font color=#FFFFFF><strong>Formular</strong></legend>
+<p>
+<input type="submit" value="Absenden">
+
+<input type="button" name="Zurück" value="Zurück" onclick="self.location.href='unternehmen.html'">
+
+</p>
+</fieldset>
+</form>
+
+</body>
+</html>
