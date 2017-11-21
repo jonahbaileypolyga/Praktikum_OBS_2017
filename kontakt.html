@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<head>
+  <title>Kontakt-Formular</title>
+  <link rel="stylesheet" type="text/css" href="./css/kontaktform.css">
+</head>
+<body>
+  <form action="http://www.formular-chef.de/fc.cgi" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="empfaenger" value="j.baileypolyga@gmail.com"/>
+  Anrede:  <label for="frau">Frau:</label>
+  <input type="radio" name="frau" id="frau" value="Frau">
+  <label for="herr">Herr:</label>
+  <input type="radio" name="herr" id="herr" value="Herr">
+  <br>
+  <label for="vorname">Vorname:</label>
+  <input type="text" name="vorname" id="vorname" placeholder="Vorname">
+  <br>
+  <label for="nachname">Nachname:</label>
+  <input type="text" name="vorname" id="vorname" placeholder="Nachname">
+  <br>
+  <label for="email">Email-Adresse:</label>
+  <input type="email" name="email" id="email" placeholder="Email-Adresse">
+  <br>
+  <label for="betreff">Betreff:</label>
+  <input type="betreff" name="betreff" id="betreff" placeholder="Betreff">
+  <br>
+  <input type="submit" value="Abschicken!">
+
+</form>
+</body>
