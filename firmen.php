@@ -4,7 +4,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$dbname = "obs_prak";
+		$dbname = "firmen";
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
 		if (mysqli_connect_errno()) {
 			die("Connection failed: " . mysqli_connect_error());
@@ -15,14 +15,14 @@
 		SELECT
 			name,telefonnr,email,abteil,link
 		FROM
-			obs_prak
+			firmen
 		WHERE
 			name LIKE '%".$suchbegriff."%'
 			OR
-			kategorie LIKE '%".$suchbegriff."%'
+			abteil LIKE '%".$suchbegriff."%'
 
 		ORDER BY
-			name,telefonnr,email,prak_als,kategorie,webseite
+			name,telefonnr,email,abteil,link
 		";
 		$query = mysqli_query($conn, $sql);
 
@@ -32,12 +32,11 @@
 			$name = $row['name'];
 			$telefonnr = $row['telefonnr'];
 			$email = $row['email'];
-			$prak_als = $row['prak_als'];
-			$kategorie = $row['kategorie'];
-			$webseite = $row['webseite'];
+			$abteil = $row['abteil'];
+			$link = $row['link'];
 
-			echo("<li>Name: ".$name." | Telefon: ".$telefonnr."  | Email: ".$email." | Praktikum als: ".$prak_als." | Kategorie: ".$kategorie."</li>");
-			print_r("<a href=".$webseite.">Zur Webseite</a>");
+			echo("<li>Name: ".$name." | Telefon: ".$telefonnr."  | Email: ".$email." | Abteil: ".$abteil."</li>");
+			print_r("<a href=".$link.">Zur Webseite</a>");
 		}
 		echo "</ul>";
 		mysqli_close($conn);

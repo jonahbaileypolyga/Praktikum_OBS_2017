@@ -4,7 +4,7 @@
 		$servername = "127.0.0.1";
 		$username = "root";
 		$password = "";
-		$dbname = "obs_prak";
+		$dbname = "firmen2";
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
 		if (mysqli_connect_errno()) {
 			die("Connection failed: " . mysqli_connect_error());
@@ -15,7 +15,7 @@
 		SELECT
 			kategorie,prak_als,name,firmenname,strasse,plz,stadt,telefon,fax,email,webseite,kontaktperson,taetigkeit,beschreibung
 		FROM
-			obs_prak
+			firmen2
 		WHERE
 			kategorie LIKE '%".$suchbegriff."%'
 			OR
