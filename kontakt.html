@@ -1,29 +1,31 @@
-<!DOCTYPE>
+<!doctype html>
+<html lang="de">
 <head>
-  <title>Kontakt-Formular</title>
-  <link rel="stylesheet" type="text/css" href="./css/kontaktform.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/styleform.css" type="text/css">
 </head>
 <body>
-  <form action="http://www.formular-chef.de/fc.cgi" method="post" enctype="multipart/form-data">
-    <input type="hidden" name="empfaenger" value="j.baileypolyga@gmail.com"/>
-  Anrede:  <label for="frau">Frau:</label>
-  <input type="radio" name="frau" id="frau" value="Frau">
-  <label for="herr">Herr:</label>
-  <input type="radio" name="herr" id="herr" value="Herr">
-  <br>
-  <label for="vorname">Vorname:</label>
-  <input type="text" name="vorname" id="vorname" placeholder="Vorname">
-  <br>
-  <label for="nachname">Nachname:</label>
-  <input type="text" name="vorname" id="vorname" placeholder="Nachname">
-  <br>
-  <label for="email">Email-Adresse:</label>
-  <input type="email" name="email" id="email" placeholder="Email-Adresse">
-  <br>
-  <label for="betreff">Betreff:</label>
-  <input type="betreff" name="betreff" id="betreff" placeholder="Betreff">
-  <br>
-  <input type="submit" value="Abschicken!">
-
+<fieldset>
+<form name="contactform" method="post" action="send_form_email.php">
+<label for="first_name">Vorname *</label>
+<input  type="text" name="first_name" maxlength="50" size="30">
+<br>
+<label for="last_name">Nachname *</label>
+<input  type="text" name="last_name" maxlength="50" size="30">
+<br>
+<label for="email">Email Addresse *</label>
+<input  type="text" name="email" maxlength="80" size="30">
+<br>
+<label for="site">Telefonnummer</label>
+<input  type="text" name="telephone" maxlength="30" size="30">
+<br>
+<label for="comments">Nachricht *</label>
+<textarea  name="comments" maxlength="999" cols="25" rows="6"></textarea>
+<br>
+<input type="submit" value="Senden">
 </form>
+</fieldset>
 </body>
