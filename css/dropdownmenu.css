@@ -6,11 +6,6 @@ h1 {
 }
 
 
-body {
-  background:#ffffff;
-  font-family:Helvetica, sans-serif;
-}
-
 nav {
  position:absolute;
   top:75px;
@@ -35,7 +30,7 @@ nav ul li {
  list-style:none;
  color:#999;
  background:#333;
- width:100px; /*dropdown breite*/
+ width:120px; /*dropdown breite*/
  text-align:center;
  border-right:1px solid #444;
  transition:all 800ms;
@@ -75,7 +70,7 @@ nav ul li ul li:first-child {
    border-radius:10px 10px 0 0;
  }
 
- 
+
 nav li a {
     display: block;
     color: #000;
